@@ -18,14 +18,14 @@ h1{
   font-weight:400;
   font-size:35px;
   text-align: center;
-  color:lightgrey
+  color:darkgrey
 }
 h2{
   font-family:'Muli', sans-serif;
   font-weight:300;
   font-size:30px;
   text-align: center;
-  color: lightgrey
+  color: darkgrey
 }
 
 #container{
@@ -44,7 +44,6 @@ h2{
 #nav li {
     margin: 10px;
     padding: 10px;
-    width: 25%;
   border-bottom: 2px solid lightblue;
   text-decoration: none;
   float: left;
@@ -65,9 +64,6 @@ h2{
     float:none;
   }
 
-.italic {
-  font-style:italic;
-}
 
 #nav a:link, a:visited {
   display: block;
@@ -91,5 +87,4 @@ img {
 }
 body {
   background-color:darkgrey
-}
 }
