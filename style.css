@@ -1,9 +1,6 @@
 html {
   font-size: 100%
 }
-
-
-
 p{
   color: lightblue;
   font-weight:300;
@@ -56,6 +53,21 @@ h2{
     display:block;
   }
 
+  #nav a:link, a:visited {
+    display: block;
+    color: purple;
+    background-color: lightgrey;
+    font-weight: normal;
+    font-size:20px;
+    text-align: center;
+    padding: 8px;
+    font-family: "Apple Chancery", cursive;
+  }
+
+  #nav a:hover, a:active {
+      background-color: lightblue;
+    }
+
   #nav li {
       margin: 10px;
       padding: 10px;
@@ -63,23 +75,6 @@ h2{
     text-decoration: none;
     float:none;
   }
-
-
-#nav a:link, a:visited {
-  display: block;
-  color: purple;
-  background-color: lightgrey;
-  font-weight: normal;
-  font-size:20px;
-  text-align: center;
-  padding: 8px;
-  font-family: "Apple Chancery", cursive;
-}
-
-#nav a:hover, a:active {
-    background-color: lightblue;
-  }
-
 
 img {
   border: none;
