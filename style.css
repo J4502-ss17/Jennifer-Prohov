@@ -1,8 +1,13 @@
+html {
+  font-size: 100%
+}
+
+
 
 p{
   color: lightblue;
   font-weight:300;
-  font-family:Georgia, "Cambria", serif;
+  font-family: 'Muli', sans-serif;
   font-size:25px;
   text-align: center;
 }
