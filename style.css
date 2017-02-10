@@ -7,7 +7,7 @@ html {
 p{
   color: lightblue;
   font-weight:300;
-  font-family: 'Quicksand', sans-serif
+  font-family: 'Quicksand', sans-serif;
   font-size:25px;
   line-height: 1.5rem;
   text-align: center;
@@ -32,6 +32,7 @@ h2{
   text-align: center;
   width: 90%;
   margin: 0 auto;
+  background-color: none
 }
 
 #nav {
@@ -43,6 +44,7 @@ h2{
 #nav li {
     margin: 10px;
     padding: 10px;
+    width: 25%;
   border-bottom: 2px solid lightblue;
   text-decoration: none;
   float: left;
@@ -62,7 +64,6 @@ h2{
     text-decoration: none;
     float:none;
   }
-}
 
 .italic {
   font-style:italic;
