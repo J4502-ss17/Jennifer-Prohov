@@ -96,7 +96,7 @@ h2{
   width:100%;
 }
 
-article{
+#article{
   display:flex;
   flex-flow: row;
   justify-content: center;
@@ -117,7 +117,7 @@ article{
 
   }
 
-  article{
+  #article{
     flex-flow:column;
   }
 
@@ -154,7 +154,7 @@ article{
         flex: 1 auto;
     }
 
-    article {
+    #article {
 		flex: 3 0px;
 	}
 
@@ -162,7 +162,7 @@ article{
         order: 1;
     }
 
-    article {
+    #article {
         order: 2;
     }
 
