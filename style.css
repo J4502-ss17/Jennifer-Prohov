@@ -1,6 +1,14 @@
 html {
-  font-size: 100%
+  font-size: 100%;
+  padding:0px;
+  margin:0px;
 }
+
+body{
+  padding:0px;
+  margin:0px;
+}
+
 p{
   color: lightblue;
   font-weight:300;
@@ -25,34 +33,149 @@ h2{
   color: darkgrey;
 }
 
+#header{
+  display: flex;
+  justify-content: flex-end;
+  background-color:lightblue;
+}
+
 #container{
   text-align: center;
   width: 90%;
   margin: 0 auto;
   background-color: white;
+
+  display:flex;
+  flex-flow:row;
+}
+
+.navigation{
+	list-style: none;
+	margin: 0;
+	background: white;
+    padding: 0;
+    display: flex;
+	flex-flow: column;
+}
+
+.navigation a {
+	text-decoration: none;
+	display: block;
+	color: white;
+    text-align:center;
+    padding: 10px;
+    border-bottom:1px solid black;
+}
+
+.navigation li:last-of-type a{
+  border-bottom: none;
 }
 
 #nav{
   padding: 10px;
   list-style-type: none;
-  display:inline-block;
+
+  display: flex;
+  flex-flow: row;
+
 }
 
 #nav li{
     margin: 10px;
     padding: 10px;
-  border-bottom: 2px solid lightblue;
+  border-bottom: 2px solid purple;
   text-decoration: none;
   float: left;
 }
 
-@media screen and (max-width: 600px) {
+#sideBar{
+  max-width:250px;
+}
+
+#content{
+  width:100%;
+}
+
+article{
+  display:flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+#contact{
+
+  margin:20px;
+
+}
+
+@media screen and (max-width: 800px) {
   #nav{
     padding: 10px;
     list-style-type: none;
-    display:block;
+    display:flex;
+    flex-flow:column;
+
   }
+
+  article{
+    flex-flow:column;
+  }
+
+  #header{
+    justify-content: center;
+  }
+
+  #container{
+    flex-flow:column;
+  }
+
+  #sideBar{
+    max-width: 100%;
+  }
+
 }
+
+@media (min-width:800px) {
+
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+    	background: black;
+    }
+
+    aside {
+        flex: 1 auto;
+    }
+
+    article {
+		flex: 3 0px;
+	}
+
+    .aside-1 {
+        order: 1;
+    }
+
+    article {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+
+  }
+
 
   #nav a:link, a:visited {
     display: block;
@@ -66,16 +189,9 @@ h2{
   }
 
   #nav a:hover, a:active {
-      background-color: lightblue;
+      background-color: purple;
+      color:white;
     }
-
-  #nav li {
-      margin: 10px;
-      padding: 10px;
-    border-bottom: 2px solid lightblue;
-    text-decoration: none;
-    float:none;
-  }
 
 img {
   border: none;
