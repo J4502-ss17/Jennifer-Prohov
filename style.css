@@ -33,6 +33,39 @@ h2{
   color: darkgrey;
 }
 
+.menu-trigger {
+  order: 1;
+}
+
+header h1{
+  order:2;
+  font-size: 2em;
+}
+
+nav ul {
+  disaply: none;
+}
+
+@media screen and (min-width: 700px){
+    nav ul {
+      display: flex;
+    }
+    nav ul li {
+      border-top: none;
+    }
+header h1 {
+  order:1;
+}
+ nav{
+   order: 2;
+ }
+
+.menu-trigger {
+  display: none;
+}
+
+}
+
 #header{
   display: flex;
   justify-content: flex-end;
@@ -96,7 +129,7 @@ h2{
   width:100%;
 }
 
-article{
+#article{
   display:flex;
   flex-flow: row;
   justify-content: center;
@@ -117,7 +150,7 @@ article{
 
   }
 
-  article{
+  #article{
     flex-flow:column;
   }
 
@@ -132,48 +165,6 @@ article{
   #sideBar{
     max-width: 100%;
   }
-
-}
-
-
-  #nav a:link, a:visited {
-    display: block;
-    color: purple;
-    background-color: lightgrey;
-    font-weight: normal;
-    font-size:20px;
-    text-align: center;
-    padding: 8px;
-    font-family: 'Lobster Two', cursive;
-  }
-
-  #nav a:hover, a:active {
-      background-color: purple;
-      color:white;
-    }
-
-
-@media screen and (max-width: 600px) {
-  img {
-    border: none;
-    display: none;
-  }
-
-  #nav a:link, a:visited {
-    display: block;
-    color: lightgrey;
-    background-color: purple;
-    font-weight: normal;
-    font-size:20px;
-    text-align: center;
-    padding: 8px;
-    font-family: 'Lobster Two', cursive;
-  }
-
-  #nav a:hover, a:active {
-      background-color: lightblue;
-      color:white;
-    }
 
 }
 
@@ -196,7 +187,7 @@ article{
         flex: 1 auto;
     }
 
-    article {
+    #article {
 		flex: 3 0px;
 	}
 
@@ -204,7 +195,7 @@ article{
         order: 1;
     }
 
-    article {
+    #article {
         order: 2;
     }
 
@@ -218,6 +209,27 @@ article{
 
   }
 
+
+  #nav a:link, a:visited {
+    display: block;
+    color: purple;
+    background-color: lightgrey;
+    font-weight: normal;
+    font-size:20px;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Lobster Two', cursive;
+  }
+
+  #nav a:hover, a:active {
+      background-color: purple;
+      color:white;
+    }
+
+img {
+  border: none;
+
+}
 body {
   background-color:white;
 }
