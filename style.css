@@ -13,7 +13,7 @@ p{
   color: lightblue;
   font-weight:300;
   font-family: 'Quicksand', sans-serif;
-  font-size:25px;
+  font-size:20px;
   line-height: 1.5rem;
   text-align: center;
 }
@@ -139,6 +139,10 @@ header h1 {
 
   margin:20px;
 
+}
+
+#maps {
+  align-content: center;
 }
 
 @media screen and (max-width: 800px) {
