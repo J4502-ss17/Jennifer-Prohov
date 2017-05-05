@@ -60,6 +60,7 @@ header h1 {
    order: 2;
  }
 
+
 .menu-trigger {
   display: none;
 }
@@ -79,7 +80,7 @@ header h1 {
   background-color: white;
 
   display:flex;
-  flex-flow:row;
+  flex-flow:column;
 }
 
 .navigation{
@@ -121,12 +122,16 @@ header h1 {
   float: left;
 }
 
+
 #sideBar{
-  max-width:250px;
+  max-width:150px;
+  border-top: 100px;
+  border-bottom: 100px;
 }
 
 #content{
   width:100%;
+  justify-content: center;
 }
 
 #article{
